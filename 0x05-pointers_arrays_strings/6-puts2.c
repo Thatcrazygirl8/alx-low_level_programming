@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * puts2 - will print strings
- * @str:function parameter
- * Return: 0
- */
-
+ * puts2 - prints part of a string
+ * @str: string to be printed
+ *
+ * Return: void
+ **/
 void puts2(char *str)
 {
-	int i;
-
-	for (i = 0 ; str[i] != '\0' ; i++)
-	{
-		_putchar(str[i]);
-		i++;
-	}
-	_putchar('\n');
+int i = 0;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
 }
+
+_putchar('\n');
+}
+
